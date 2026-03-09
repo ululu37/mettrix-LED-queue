@@ -818,9 +818,10 @@ sudo systemctl status led.service
 ### 🛠️ ขั้นตอนการรัน Docker Compose
 โปรดตรวจสอบว่าเครื่องของคุณมี [Docker](https://www.docker.com/) ได้ติดตั้งไว้แล้ว 
 
-1. **เปิด Terminal แล้วเข้าไปที่โฟลเดอร์ของโปรเจกต์:**
+1. **เปิด Terminal โคลนโปรเจกต์และเข้าไปที่โฟลเดอร์ config_server:**
    ```bash
-   cd config_server
+   git clone https://github.com/ululu37/mettrix-LED-queue
+   cd mettrix-LED-queue/config_server
    ```
 2. **สตาร์ทและเชื่อมต่อเซอร์วิสทั้งหมด (Build ใหม่ทุกครั้งเพื่อรับ Config ใหม่):**
    ```bash
