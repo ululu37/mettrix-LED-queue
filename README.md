@@ -24,7 +24,7 @@ https://github.com/hzeller/rpi-rgb-led-matrix
   - *รูปร่างของพินที่ควรสั่งซื้อมา (ยังไม่ได้บัดกรีขา)*:
     ![รูปแบบที่ยังไม่ได้บัดกรี](./image/hub75ไห้ซื้อเเบบนี้.webp)
   - *ภาพวิธีบัดกรี Connector ใหม่ (เพื่อให้เสียบถูกด้าน)*:
-    ![การบัดกรี Connector ใหม่](./image/ภาพการบัดกรีconnecterไหม่.jpg)
+    ![การบัดกรี Connector ใหม่](./image/ภาพการบัตกรีconnecter.jpg)
   - *ลักษณะและผลลัพธ์การประกอบชิ้นส่วนเข้ากับ Pi*:
     ![การเชื่อมต่อเข้ากับ Pi](./image/hup75ToPiConnecter.jpeg)
 * **Power Supply 5V**
@@ -777,7 +777,7 @@ sudo systemctl status led.service
 
 ---
 
-# Logger Config Server
+# Config Server
 
 โปรเจกต์นี้คือ **Config Server** ส่วนกลางที่สร้างขึ้นมาสำหรับอุปกรณ์ `serviceChannelLoger` โดยเฉพาะ ถูกพัฒนาด้วย **Node.js, Express, Socket.io, และ MongoDB** พร้อมการตั้งค่าเพื่อรันผ่าน **Docker Compose** ได้อย่างง่ายดาย
 
