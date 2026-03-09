@@ -35,7 +35,9 @@ https://github.com/hzeller/rpi-rgb-led-matrix
 
 ---
 
-# Update Raspberry Pi
+# ขั้นตอนวิธีการติดตั้งและใช้งาน Code ใน Raspberry Pi
+
+## Update Raspberry Pi
 
 อัปเดตระบบก่อนติดตั้ง
 
@@ -46,7 +48,7 @@ sudo apt upgrade -y
 
 ---
 
-# ปิดระบบเสียง (สำคัญ)
+## ปิดระบบเสียง (สำคัญ)
 
 LED Matrix library ใช้ DMA ซึ่งอาจชนกับระบบเสียงของ Raspberry Pi
 
@@ -90,7 +92,7 @@ sudo reboot
 
 ---
 
-# Install Dependencies
+## Install Dependencies
 
 ติดตั้งเครื่องมือที่จำเป็น
 
@@ -100,7 +102,7 @@ sudo apt install -y git python3 python3-pip python3-dev build-essential
 
 ---
 
-# Download LED Matrix Library
+## Download LED Matrix Library
 
 ```bash
 git clone https://github.com/hzeller/rpi-rgb-led-matrix.git
@@ -109,7 +111,7 @@ cd rpi-rgb-led-matrix
 
 ---
 
-# Compile Python Library
+## Compile Python Library
 
 ```bash
 make build-python PYTHON=$(which python3)
@@ -123,7 +125,7 @@ sudo make install-python PYTHON=$(which python3)
 
 ---
 
-# เข้าโฟลเดอร์ Project
+## เข้าโฟลเดอร์ Project
 
 ```bash
 cd ~/rpi-rgb-led-matrix/examples-api-use
@@ -131,7 +133,7 @@ cd ~/rpi-rgb-led-matrix/examples-api-use
 
 ---
 
-# สร้างไฟล์โปรแกรม test.py
+## สร้างไฟล์โปรแกรม test.py
 
 ```bash
 nano test.py
@@ -634,7 +636,7 @@ ENTER
 
 ---
 
-# Run Program
+## Run Program
 
 รันโปรแกรมจากโฟลเดอร์โปรเจกต์
 
@@ -647,7 +649,7 @@ sudo python3 test.py
 
 ---
 
-# Auto Start ด้วย Systemd
+## Auto Start ด้วย Systemd
 
 สร้าง service
 
@@ -708,7 +710,7 @@ sudo systemctl status led.service
 
 ---
 
-# การแก้ไข Code หลังเปิด Auto Start
+## การแก้ไข Code หลังเปิด Auto Start
 
 เมื่อเปิด Auto Start แล้ว หากต้องการแก้ไขโค้ด ให้ทำตามขั้นตอนนี้
 
@@ -746,7 +748,7 @@ sudo systemctl restart led.service
 
 ---
 
-# Useful Commands
+## Useful Commands
 
 Restart service
 
@@ -768,7 +770,7 @@ sudo systemctl status led.service
 
 ---
 
-# Done
+## Done
 
 เมื่อเปิดเครื่อง Raspberry Pi โปรแกรม LED Matrix จะเริ่มทำงานอัตโนมัติ
 
