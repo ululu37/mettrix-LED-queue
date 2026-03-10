@@ -31,7 +31,7 @@ https://github.com/hzeller/rpi-rgb-led-matrix
 * **HUB75 Ribbon Cable**
 
 **ภาพแสดงอุปกรณ์เมื่อประกอบเสร็จสมบูรณ์:**
-![Final Product](./image/final_product.jpg)
+![Final Product](./image/final_product2.jpg)
 
 ---
 
