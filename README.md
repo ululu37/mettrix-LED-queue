@@ -654,7 +654,7 @@ sudo python3 test.py
 สร้าง service
 
 ```bash
-sudo nano /etc/systemd/system/led.service
+sudo nano /etc/systemd/system/queue-display.service
 ```
 
 วาง configuration นี้
@@ -693,19 +693,19 @@ sudo systemctl daemon-reload
 เปิดใช้งาน Auto Start
 
 ```bash
-sudo systemctl enable led.service
+sudo systemctl enable queue-display.service
 ```
 
 เริ่ม service
 
 ```bash
-sudo systemctl start led.service
+sudo systemctl start queue-display.service
 ```
 
 ตรวจสอบสถานะ
 
 ```bash
-sudo systemctl status led.service
+sudo systemctl status queue-display.service
 ```
 
 ---
@@ -717,7 +717,7 @@ sudo systemctl status led.service
 หยุด service ก่อน
 
 ```bash
-sudo systemctl stop led.service
+sudo systemctl stop queue-display.service
 ```
 
 เปิดไฟล์โค้ดเพื่อแก้ไข
@@ -737,13 +737,13 @@ ENTER
 เริ่ม service ใหม่
 
 ```bash
-sudo systemctl start led.service
+sudo systemctl start queue-display.service
 ```
 
 หรือ restart
 
 ```bash
-sudo systemctl restart led.service
+sudo systemctl restart queue-display.service
 ```
 
 ---
@@ -753,19 +753,19 @@ sudo systemctl restart led.service
 Restart service
 
 ```bash
-sudo systemctl restart led.service
+sudo systemctl restart queue-display.service
 ```
 
 Stop service
 
 ```bash
-sudo systemctl stop led.service
+sudo systemctl stop queue-display.service
 ```
 
 Check service status
 
 ```bash
-sudo systemctl status led.service
+sudo systemctl status queue-display.service
 ```
 
 ---
